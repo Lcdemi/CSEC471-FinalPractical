@@ -1,0 +1,23 @@
+SMB                      192.168.56.11   445    WINTERFELL       [*] Windows 10 / Server 2019 Build 17763 x64 (name:WINTERFELL) (domain:north.sevenkingdoms.local) (signing:True) (SMBv1:False)
+SMB                      192.168.56.22   445    CASTELBLACK      [*] Windows 10 / Server 2019 Build 17763 x64 (name:CASTELBLACK) (domain:north.sevenkingdoms.local) (signing:False) (SMBv1:False)
+SMB                      192.168.56.10   445    KINGSLANDING     [*] Windows 10 / Server 2019 Build 17763 x64 (name:KINGSLANDING) (domain:sevenkingdoms.local) (signing:True) (SMBv1:False)
+SMB                      192.168.56.12   445    MEEREEN          [*] Windows Server 2016 Standard 14393 x64 (name:MEEREEN) (domain:essos.local) (signing:True) (SMBv1:True)
+SMB                      192.168.56.22   445    CASTELBLACK      [-] Error enumerating domain users using dc ip 192.168.56.22: SMB SessionError: code: 0xc0000022 - STATUS_ACCESS_DENIED - {Access Denied} A process has requested access to an object but has not been granted those access rights.
+SMB                      192.168.56.22   445    CASTELBLACK      [*] Trying with SAMRPC protocol
+SMB                      192.168.56.10   445    KINGSLANDING     [-] Error enumerating domain users using dc ip 192.168.56.10: NTLM needs domain\username and a password
+SMB                      192.168.56.10   445    KINGSLANDING     [*] Trying with SAMRPC protocol
+SMB                      192.168.56.11   445    WINTERFELL       [-] Error enumerating domain users using dc ip 192.168.56.11: NTLM needs domain\username and a password
+SMB                      192.168.56.12   445    MEEREEN          [-] Error enumerating domain users using dc ip 192.168.56.12: NTLM needs domain\username and a password
+SMB                      192.168.56.11   445    WINTERFELL       [*] Trying with SAMRPC protocol
+SMB                      192.168.56.12   445    MEEREEN          [*] Trying with SAMRPC protocol
+SMB                      192.168.56.11   445    WINTERFELL       [+] Enumerated domain user(s)
+SMB                      192.168.56.11   445    WINTERFELL       north.sevenkingdoms.local\Guest                          Built-in account for guest access to the computer/domain
+SMB                      192.168.56.11   445    WINTERFELL       north.sevenkingdoms.local\arya.stark                     Arya Stark
+SMB                      192.168.56.11   445    WINTERFELL       north.sevenkingdoms.local\sansa.stark                    Sansa Stark
+SMB                      192.168.56.11   445    WINTERFELL       north.sevenkingdoms.local\brandon.stark                  Brandon Stark
+SMB                      192.168.56.11   445    WINTERFELL       north.sevenkingdoms.local\rickon.stark                   Rickon Stark
+SMB                      192.168.56.11   445    WINTERFELL       north.sevenkingdoms.local\hodor                          Brainless Giant
+SMB                      192.168.56.11   445    WINTERFELL       north.sevenkingdoms.local\jon.snow                       Jon Snow
+SMB                      192.168.56.11   445    WINTERFELL       north.sevenkingdoms.local\samwell.tarly                  Samwell Tarly (Password : Heartsbane)
+SMB                      192.168.56.11   445    WINTERFELL       north.sevenkingdoms.local\jeor.mormont                   Jeor Mormont
+SMB                      192.168.56.11   445    WINTERFELL       north.sevenkingdoms.local\sql_svc                        sql service
