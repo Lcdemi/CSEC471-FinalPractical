@@ -1,0 +1,133 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-12-06 09:49 PST
+Nmap scan report for 192.168.56.4
+Host is up (0.00013s latency).
+All 1000 scanned ports on 192.168.56.4 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 00:50:56:B0:C7:1C (VMware)
+
+Nmap scan report for 192.168.56.10
+Host is up (0.00061s latency).
+Not shown: 987 closed tcp ports (reset)
+PORT     STATE SERVICE
+53/tcp   open  domain
+80/tcp   open  http
+88/tcp   open  kerberos-sec
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+389/tcp  open  ldap
+445/tcp  open  microsoft-ds
+464/tcp  open  kpasswd5
+593/tcp  open  http-rpc-epmap
+636/tcp  open  ldapssl
+3268/tcp open  globalcatLDAP
+3269/tcp open  globalcatLDAPssl
+3389/tcp open  ms-wbt-server
+MAC Address: 00:50:56:B0:8B:9D (VMware)
+
+Host script results:
+| nbstat: NetBIOS name: KINGSLANDING, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:b0:8b:9d (VMware)
+| Names:
+|   KINGSLANDING<00>     Flags: <unique><active>
+|   SEVENKINGDOMS<00>    Flags: <group><active>
+|   SEVENKINGDOMS<1c>    Flags: <group><active>
+|   KINGSLANDING<20>     Flags: <unique><active>
+|_  SEVENKINGDOMS<1b>    Flags: <unique><active>
+
+Nmap scan report for 192.168.56.11
+Host is up (0.0017s latency).
+Not shown: 988 closed tcp ports (reset)
+PORT     STATE SERVICE
+53/tcp   open  domain
+88/tcp   open  kerberos-sec
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+389/tcp  open  ldap
+445/tcp  open  microsoft-ds
+464/tcp  open  kpasswd5
+593/tcp  open  http-rpc-epmap
+636/tcp  open  ldapssl
+3268/tcp open  globalcatLDAP
+3269/tcp open  globalcatLDAPssl
+3389/tcp open  ms-wbt-server
+MAC Address: 00:50:56:B0:01:BD (VMware)
+
+Host script results:
+| nbstat: NetBIOS name: WINTERFELL, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:b0:01:bd (VMware)
+| Names:
+|   WINTERFELL<00>       Flags: <unique><active>
+|   NORTH<00>            Flags: <group><active>
+|   NORTH<1c>            Flags: <group><active>
+|   WINTERFELL<20>       Flags: <unique><active>
+|_  NORTH<1b>            Flags: <unique><active>
+
+Nmap scan report for 192.168.56.12
+Host is up (0.00014s latency).
+Not shown: 988 closed tcp ports (reset)
+PORT     STATE SERVICE
+53/tcp   open  domain
+88/tcp   open  kerberos-sec
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+389/tcp  open  ldap
+445/tcp  open  microsoft-ds
+464/tcp  open  kpasswd5
+593/tcp  open  http-rpc-epmap
+636/tcp  open  ldapssl
+3268/tcp open  globalcatLDAP
+3269/tcp open  globalcatLDAPssl
+3389/tcp open  ms-wbt-server
+MAC Address: 00:50:56:B0:13:31 (VMware)
+
+Host script results:
+| nbstat: NetBIOS name: MEEREEN, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:b0:13:31 (VMware)
+| Names:
+|   ESSOS<00>            Flags: <group><active>
+|   MEEREEN<00>          Flags: <unique><active>
+|   ESSOS<1c>            Flags: <group><active>
+|   MEEREEN<20>          Flags: <unique><active>
+|_  ESSOS<1b>            Flags: <unique><active>
+
+Nmap scan report for 192.168.56.22
+Host is up (0.00042s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT     STATE SERVICE
+80/tcp   open  http
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1433/tcp open  ms-sql-s
+3389/tcp open  ms-wbt-server
+MAC Address: 00:50:56:B0:E9:5C (VMware)
+
+Host script results:
+| nbstat: NetBIOS name: CASTELBLACK, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:b0:e9:5c (VMware)
+| Names:
+|   CASTELBLACK<00>      Flags: <unique><active>
+|   NORTH<00>            Flags: <group><active>
+|_  CASTELBLACK<20>      Flags: <unique><active>
+
+Nmap scan report for 192.168.56.23
+Host is up (0.00094s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT     STATE SERVICE
+80/tcp   open  http
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1433/tcp open  ms-sql-s
+3389/tcp open  ms-wbt-server
+MAC Address: 00:50:56:B0:47:71 (VMware)
+
+Host script results:
+| nbstat: NetBIOS name: BRAAVOS, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:b0:47:71 (VMware)
+| Names:
+|   BRAAVOS<00>          Flags: <unique><active>
+|   ESSOS<00>            Flags: <group><active>
+|_  BRAAVOS<20>          Flags: <unique><active>
+
+Nmap scan report for 192.168.56.5
+Host is up (0.000016s latency).
+All 1000 scanned ports on 192.168.56.5 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+Nmap done: 256 IP addresses (7 hosts up) scanned in 13.19 seconds
