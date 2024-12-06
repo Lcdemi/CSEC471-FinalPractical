@@ -1,0 +1,77 @@
+# Nmap 7.94SVN scan initiated Fri Dec  6 09:25:04 2024 as: /usr/lib/nmap/nmap --privileged -Pn -sT -sC -sV -oA .23scan.txt 192.168.56.23
+Nmap scan report for 192.168.56.23
+Host is up (0.00023s latency).
+Not shown: 994 closed tcp ports (conn-refused)
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: IIS Windows Server
+| http-methods: 
+|_  Potentially risky methods: TRACE
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds  Windows Server 2016 Standard 14393 microsoft-ds
+1433/tcp open  ms-sql-s      Microsoft SQL Server 2019 15.00.2000.00; RTM
+| ms-sql-ntlm-info: 
+|   192.168.56.23:1433: 
+|     Target_Name: ESSOS
+|     NetBIOS_Domain_Name: ESSOS
+|     NetBIOS_Computer_Name: BRAAVOS
+|     DNS_Domain_Name: essos.local
+|     DNS_Computer_Name: braavos.essos.local
+|     DNS_Tree_Name: essos.local
+|_    Product_Version: 10.0.14393
+| ms-sql-info: 
+|   192.168.56.23:1433: 
+|     Version: 
+|       name: Microsoft SQL Server 2019 RTM
+|       number: 15.00.2000.00
+|       Product: Microsoft SQL Server 2019
+|       Service pack level: RTM
+|       Post-SP patches applied: false
+|_    TCP port: 1433
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Not valid before: 2024-12-04T18:46:30
+|_Not valid after:  2054-12-04T18:46:30
+|_ssl-date: 2024-12-06T17:25:19+00:00; 0s from scanner time.
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| ssl-cert: Subject: commonName=braavos.essos.local
+| Not valid before: 2024-11-18T18:01:48
+|_Not valid after:  2025-05-20T18:01:48
+| rdp-ntlm-info: 
+|   Target_Name: ESSOS
+|   NetBIOS_Domain_Name: ESSOS
+|   NetBIOS_Computer_Name: BRAAVOS
+|   DNS_Domain_Name: essos.local
+|   DNS_Computer_Name: braavos.essos.local
+|   DNS_Tree_Name: essos.local
+|   Product_Version: 10.0.14393
+|_  System_Time: 2024-12-06T17:25:14+00:00
+|_ssl-date: 2024-12-06T17:25:19+00:00; 0s from scanner time.
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb-os-discovery: 
+|   OS: Windows Server 2016 Standard 14393 (Windows Server 2016 Standard 6.3)
+|   Computer name: braavos
+|   NetBIOS computer name: BRAAVOS\x00
+|   Domain name: essos.local
+|   Forest name: essos.local
+|   FQDN: braavos.essos.local
+|_  System time: 2024-12-06T09:25:14-08:00
+| smb2-time: 
+|   date: 2024-12-06T17:25:14
+|_  start_date: 2024-12-04T18:46:03
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_nbstat: NetBIOS name: BRAAVOS, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:b0:47:71 (VMware)
+|_clock-skew: mean: 1h08m34s, deviation: 3h01m25s, median: 0s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Dec  6 09:25:19 2024 -- 1 IP address (1 host up) scanned in 14.97 seconds

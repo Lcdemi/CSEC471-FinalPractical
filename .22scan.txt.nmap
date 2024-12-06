@@ -1,0 +1,63 @@
+# Nmap 7.94SVN scan initiated Fri Dec  6 09:24:42 2024 as: /usr/lib/nmap/nmap --privileged -Pn -sT -sC -sV -oA .22scan.txt 192.168.56.22
+Nmap scan report for 192.168.56.22
+Host is up (0.00028s latency).
+Not shown: 994 closed tcp ports (conn-refused)
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: Microsoft-IIS/10.0
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+1433/tcp open  ms-sql-s      Microsoft SQL Server 2019 15.00.2000.00; RTM
+|_ssl-date: 2024-12-06T17:24:57+00:00; 0s from scanner time.
+| ms-sql-ntlm-info: 
+|   192.168.56.22:1433: 
+|     Target_Name: NORTH
+|     NetBIOS_Domain_Name: NORTH
+|     NetBIOS_Computer_Name: CASTELBLACK
+|     DNS_Domain_Name: north.sevenkingdoms.local
+|     DNS_Computer_Name: castelblack.north.sevenkingdoms.local
+|     DNS_Tree_Name: sevenkingdoms.local
+|_    Product_Version: 10.0.17763
+| ms-sql-info: 
+|   192.168.56.22:1433: 
+|     Version: 
+|       name: Microsoft SQL Server 2019 RTM
+|       number: 15.00.2000.00
+|       Product: Microsoft SQL Server 2019
+|       Service pack level: RTM
+|       Post-SP patches applied: false
+|_    TCP port: 1433
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Not valid before: 2024-12-04T18:46:46
+|_Not valid after:  2054-12-04T18:46:46
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| ssl-cert: Subject: commonName=castelblack.north.sevenkingdoms.local
+| Not valid before: 2024-11-18T18:01:48
+|_Not valid after:  2025-05-20T18:01:48
+|_ssl-date: 2024-12-06T17:24:57+00:00; 0s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: NORTH
+|   NetBIOS_Domain_Name: NORTH
+|   NetBIOS_Computer_Name: CASTELBLACK
+|   DNS_Domain_Name: north.sevenkingdoms.local
+|   DNS_Computer_Name: castelblack.north.sevenkingdoms.local
+|   DNS_Tree_Name: sevenkingdoms.local
+|   Product_Version: 10.0.17763
+|_  System_Time: 2024-12-06T17:24:52+00:00
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_nbstat: NetBIOS name: CASTELBLACK, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:b0:e9:5c (VMware)
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2024-12-06T17:24:52
+|_  start_date: N/A
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Dec  6 09:24:57 2024 -- 1 IP address (1 host up) scanned in 15.75 seconds

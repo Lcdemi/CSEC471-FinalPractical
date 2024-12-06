@@ -1,0 +1,63 @@
+# Nmap 7.94SVN scan initiated Fri Dec  6 09:22:26 2024 as: /usr/lib/nmap/nmap --privileged -Pn -sT -sC -sV -oA .11scan.txt 192.168.56.11
+Nmap scan report for 192.168.56.11
+Host is up (0.00020s latency).
+Not shown: 988 closed tcp ports (conn-refused)
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        Simple DNS Plus
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2024-12-06 17:22:35Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: sevenkingdoms.local0., Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=winterfell.north.sevenkingdoms.local
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1::<unsupported>, DNS:winterfell.north.sevenkingdoms.local
+| Not valid before: 2024-11-20T02:30:03
+|_Not valid after:  2025-11-20T02:30:03
+|_ssl-date: 2024-12-06T17:23:22+00:00; 0s from scanner time.
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: sevenkingdoms.local0., Site: Default-First-Site-Name)
+|_ssl-date: 2024-12-06T17:23:22+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=winterfell.north.sevenkingdoms.local
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1::<unsupported>, DNS:winterfell.north.sevenkingdoms.local
+| Not valid before: 2024-11-20T02:30:03
+|_Not valid after:  2025-11-20T02:30:03
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: sevenkingdoms.local0., Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=winterfell.north.sevenkingdoms.local
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1::<unsupported>, DNS:winterfell.north.sevenkingdoms.local
+| Not valid before: 2024-11-20T02:30:03
+|_Not valid after:  2025-11-20T02:30:03
+|_ssl-date: 2024-12-06T17:23:22+00:00; 0s from scanner time.
+3269/tcp open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: sevenkingdoms.local0., Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=winterfell.north.sevenkingdoms.local
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1::<unsupported>, DNS:winterfell.north.sevenkingdoms.local
+| Not valid before: 2024-11-20T02:30:03
+|_Not valid after:  2025-11-20T02:30:03
+|_ssl-date: 2024-12-06T17:23:22+00:00; 0s from scanner time.
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| ssl-cert: Subject: commonName=winterfell.north.sevenkingdoms.local
+| Not valid before: 2024-11-18T17:47:23
+|_Not valid after:  2025-05-20T17:47:23
+|_ssl-date: 2024-12-06T17:23:22+00:00; 0s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: NORTH
+|   NetBIOS_Domain_Name: NORTH
+|   NetBIOS_Computer_Name: WINTERFELL
+|   DNS_Domain_Name: north.sevenkingdoms.local
+|   DNS_Computer_Name: winterfell.north.sevenkingdoms.local
+|   DNS_Tree_Name: sevenkingdoms.local
+|   Product_Version: 10.0.17763
+|_  System_Time: 2024-12-06T17:23:14+00:00
+Service Info: Host: WINTERFELL; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2024-12-06T17:23:14
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled and required
+|_nbstat: NetBIOS name: WINTERFELL, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:b0:01:bd (VMware)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Dec  6 09:23:22 2024 -- 1 IP address (1 host up) scanned in 55.88 seconds
