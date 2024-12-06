@@ -1,0 +1,59 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-12-06 10:13 PST
+Nmap scan report for 192.168.56.4
+Host is up (0.00014s latency).
+
+PORT   STATE    SERVICE
+80/tcp filtered http
+MAC Address: 00:50:56:B0:C7:1C (VMware)
+
+Nmap scan report for 192.168.56.10
+Host is up (0.00020s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+MAC Address: 00:50:56:B0:8B:9D (VMware)
+
+Nmap scan report for 192.168.56.11
+Host is up (0.00018s latency).
+
+PORT   STATE  SERVICE
+80/tcp closed http
+MAC Address: 00:50:56:B0:01:BD (VMware)
+
+Nmap scan report for 192.168.56.12
+Host is up (0.000084s latency).
+
+PORT   STATE  SERVICE
+80/tcp closed http
+MAC Address: 00:50:56:B0:13:31 (VMware)
+
+Nmap scan report for 192.168.56.22
+Host is up (0.00028s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+MAC Address: 00:50:56:B0:E9:5C (VMware)
+
+Nmap scan report for 192.168.56.23
+Host is up (0.00024s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+MAC Address: 00:50:56:B0:47:71 (VMware)
+
+Nmap scan report for 192.168.56.5
+Host is up (0.000055s latency).
+
+PORT   STATE  SERVICE
+80/tcp closed http
+
+Nmap done: 256 IP addresses (7 hosts up) scanned in 2.50 seconds
